@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  z-index: 999;
+}
+.Home-page {
+  display: grid;
+  grid-template-columns: 12% auto;
+}
+.Home-container {
+  margin-top: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  gap: 5px;
+  /* z-index: -1; */
+}
+.Home-page-no-nav {
+  display: grid;
+}
+/* .Navbar-none {
+  display: none;
+} */
+.PlayerPage {
+  margin-top: 5%;
+  width: 100%;
+}
