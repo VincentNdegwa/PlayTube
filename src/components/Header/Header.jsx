@@ -3,6 +3,7 @@ import "./Header.css";
 import { BiMenu, BiSearch, BiMicrophone, BiVideoPlus } from "react-icons/bi";
 import { MdNotificationsNone } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { AiFillYoutube } from "react-icons/ai";
 
 function Header() {
   return (
@@ -12,8 +13,8 @@ function Header() {
           <BiMenu />
         </div>
         <div className="Header-left-icon2">
-          <div className="Header-left-icon-img">
-            <img src="logo.png" alt="" />
+          <div className="Header-left-icon-logo">
+            <AiFillYoutube />
           </div>
           <div className="Header-left-icon-text">
             <h4>PlayTube</h4>

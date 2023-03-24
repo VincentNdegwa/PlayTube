@@ -27,14 +27,21 @@
   justify-content: space-between;
   height: 15px;
 }
-.Header-left-icon2 img {
+.Header-left-icon2-logo {
   height: 17px;
   width: 20px;
-  margin-top: -0.2rem;
+}
+.Header-left-icon-logo {
+  color: red;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0.05em;
 }
 .Header-left-icon-text {
   margin-top: -0.7rem;
   font-size: 8px;
+  margin-left: 0.5em;
 }
 .Header-center {
   display: flex;

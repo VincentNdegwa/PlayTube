@@ -3,9 +3,10 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import {
-  MdOutlineSlowMotionVideo,
   MdOutlineSubscriptions,
+  MdOutlinePlayCircleOutline,
 } from "react-icons/md";
+// import { IoPlayOutline } from "react-icons/io";
 
 function Navbar() {
   return (
@@ -23,7 +24,7 @@ function Navbar() {
         <Link to="/" style={{ textDecoration: "none" }}>
           <div className="Navbar-item">
             <div className="Navbar-icon">
-              <MdOutlineSlowMotionVideo />
+              <MdOutlinePlayCircleOutline />
             </div>
             <div className="Navbar-text">Shorts</div>
           </div>

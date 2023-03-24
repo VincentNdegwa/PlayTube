@@ -82,7 +82,7 @@ function Main(props) {
               <PlayVideo
                 videoId={videoId}
                 key={videoId}
-                data={videoData}
+                videoData={videoData}
                 className="PlayerPage"
               />
             }

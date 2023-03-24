@@ -11,17 +11,38 @@
 }
 .Player-additional {
   display: grid;
-  grid-template-columns: 200px 300px;
+  grid-template-rows: auto auto;
   column-gap: 5px;
-  width: 100%;
+  width: 45%;
+  margin-left: 4%;
+  margin-top: 1%;
 }
 .Player-details {
   width: 100%;
   height: 20px;
-  background-color: blue;
+  display: grid;
+  grid-template-rows: 20px 50px;
+}
+.player-title {
+  font-size: 1em;
+  color: white;
+  margin-top: 0px;
+}
+.Player-logo > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.Player-channel {
+  display: flex;
+  flex-direction: row;
+}
+.Player-channel-title {
+  margin-left: 3%;
+  font-size: 0.7em;
 }
 .Player-extra-videos {
   width: 100%;
   height: 20px;
-  background-color: green;
 }
