@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PlayTube/static/css/main.9ac823e8.css",
+    "main.js": "/PlayTube/static/js/main.1c84e756.js",
+    "index.html": "/PlayTube/index.html",
+    "main.9ac823e8.css.map": "/PlayTube/static/css/main.9ac823e8.css.map",
+    "main.1c84e756.js.map": "/PlayTube/static/js/main.1c84e756.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ac823e8.css",
+    "static/js/main.1c84e756.js"
+  ]
+}
