@@ -5,11 +5,11 @@ import { MdNotificationsNone } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { AiFillYoutube } from "react-icons/ai";
 
-function Header() {
+function Header(props) {
   return (
     <div className="Header">
       <div className="Header-left">
-        <div className="Header-left-icon1">
+        <div className="Header-left-icon1" onClick={props.toggleMenu}>
           <BiMenu />
         </div>
         <div className="Header-left-icon2">
@@ -24,11 +24,15 @@ function Header() {
 
       <div className="Header-center">
         <div className="Header-center-input">
-          <input type="text" placeholder="Search" className="Header-input" />
-          <BiSearch className="Header-search-icon" />
-        </div>
-        <div className="Header-center-mic">
-          <BiMicrophone />
+          <div className="input-holder">
+            <input type="text" placeholder="Search" className="Header-input" />
+          </div>
+          <div>
+            <BiSearch className="Header-search-icon" />
+          </div>
+          <div className="Header-center-mic">
+            <BiMicrophone />
+          </div>
         </div>
       </div>
 

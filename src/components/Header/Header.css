@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 30px;
+  height: 6em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   /* z-index: 999; */
 }
 .Header-left {
@@ -15,9 +16,11 @@
   flex-direction: row; */
   display: grid;
   grid-template-columns: auto auto;
-  height: 15px;
+  height: 90%;
   column-gap: 20%;
   margin-left: 12px;
+  font-size: 2.5em;
+  width: 20%;
 }
 .Header-left-icon2 {
   /* display: grid;
@@ -26,6 +29,11 @@
   flex-direction: row;
   justify-content: space-between;
   height: 15px;
+  font-size: 1em;
+}
+.Header-left-icon-text > h4 {
+  font-size: 2.5em;
+  margin-top: 0.6em;
 }
 .Header-left-icon2-logo {
   height: 17px;
@@ -47,39 +55,52 @@
 .Header-center {
   display: flex;
   flex-direction: row;
-  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+  height: 90%;
+  width: 60%;
 }
 .Header-center-input {
   position: relative;
   margin-left: 0px;
+  width: 70%;
+  margin-top: -1.2em;
+  display: flex;
+  flex-direction: row;
+}
+.input-holder {
+  width: 90%;
 }
 .Header-input {
-  width: 200px;
-  height: 10px;
+  width: 100%;
+  height: 2.5em;
   border-radius: 20px;
   margin-top: -5px;
   border: 2px #222222 solid;
-  text-indent: 5px;
+  text-indent: 1em;
   font-size: 7px;
   background: transparent;
   outline: none;
+  color: white;
+  font-size: 1em;
 }
 .Header-search-icon {
   position: absolute;
-  margin-left: -17px;
-  margin-top: 2px;
+  margin-top: 0.7em;
   color: white;
   padding: 2px;
   border-radius: 20px;
   font-size: 10px;
+  margin-left: -1.5em;
 }
 .Header-center-mic {
   background: #181818;
   font-size: 10px;
   padding: 2px;
   border-radius: 20px;
-  margin-top: 2px;
-  margin-left: -5px;
+  margin-top: 0.7em;
+  margin-left: 2em;
   cursor: pointer;
   height: 12px;
   width: 12px;
@@ -87,9 +108,12 @@
   align-items: center;
 }
 .Header-right {
-  margin-right: 15px;
+  /* margin-right: 15px; */
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  column-gap: 10px;
-  margin-top: 2px;
+  grid-template-columns: repeat(3, 1.5em);
+  column-gap: 0.5em;
+  margin-top: -1em;
+  width: 20%;
+  font-size: 1.5em;
+  margin-right: -2em;
 }

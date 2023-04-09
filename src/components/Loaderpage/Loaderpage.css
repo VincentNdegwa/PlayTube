@@ -1,8 +1,8 @@
 .loading-card {
   display: flex;
   flex-direction: column;
-  width: 120px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   /* border: 1px solid #ccc; */
   border-radius: 8px;
   overflow: hidden;

@@ -1,6 +1,12 @@
 import React from "react";
 import "./PlayVideo.css";
 import YoutubeData from "../../Data";
+import { Link } from "react-router-dom";
+import { AiFillHome } from "react-icons/ai";
+import {
+  MdOutlineSubscriptions,
+  MdOutlinePlayCircleOutline,
+} from "react-icons/md";
 
 function PlayVideo(props) {
   // const [videoId, setVideoId] = React.useState(props.videoId);
@@ -20,6 +26,36 @@ function PlayVideo(props) {
 
   return (
     <div className="PlayVideo-container">
+      <div className={props.menuClicked ? "Navbar-active" : "Navbar"}>
+        <div className="Navbar-container">
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <div className="Navbar-item">
+              <div className="Navbar-icon">
+                <AiFillHome />
+              </div>
+              <div className="Navbar-text">Home</div>
+            </div>
+          </Link>
+
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <div className="Navbar-item">
+              <div className="Navbar-icon">
+                <MdOutlinePlayCircleOutline />
+              </div>
+              <div className="Navbar-text">Shorts</div>
+            </div>
+          </Link>
+
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <div className="Navbar-item">
+              <div className="Navbar-icon">
+                <MdOutlineSubscriptions />
+              </div>
+              <div className="Navbar-text">Subscription</div>
+            </div>
+          </Link>
+        </div>
+      </div>
       <div className="Player-holder">
         <iframe
           className="PlayVideo"

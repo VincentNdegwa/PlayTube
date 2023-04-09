@@ -1,32 +1,50 @@
 .Navbar {
   margin-top: 30px;
-  width: 12%;
+  width: 10em;
   z-index: auto;
   position: fixed;
+  background-color: #0f0f0f;
+  transition: margin-left ease 2s;
+  margin-left: 0;
 }
+
+.Navbar-active {
+  margin-top: 30px;
+  width: 10em;
+  z-index: auto;
+  position: fixed;
+  background-color: #0f0f0f;
+  margin-left: -10em;
+  display: block;
+  transition: margin-left ease 2s;
+}
+
 .Navbar-container {
   display: grid;
+  width: 100%;
   grid-template-rows: repeat(auto, 1fr);
-  column-gap: 0px;
+  column-gap: 1em;
 }
+
 .Navbar-item {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
-  margin-left: 8px;
+  margin-left: 0;
   margin-right: 2px;
-  height: 15px;
+  height: 2.5em;
   align-items: center;
   padding: 4px;
   border-radius: 6px;
   text-decoration: none;
   color: #ffffff;
+  width: 100%;
 }
 .Navbar-item:hover {
   background: #272727;
 }
 .Navbar-text {
-  font-size: 7px;
+  font-size: 1em;
   font-weight: 100;
   text-decoration: none;
   color: #ffffff;

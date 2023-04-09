@@ -10,14 +10,18 @@ function Main(props) {
   const [isLoading, setIsLoading] = React.useState(true);
   const [videoData, setVideoData] = React.useState([]);
   const [videoId, setVideoId] = React.useState();
+  const [menuClicked, setMenuClicked] = React.useState(false);
   // const [isPlayVideoRendered, setIsPlayVideoRendered] = React.useState(false);
   const location = useLocation();
 
+  function toggleMenu() {
+    setMenuClicked(!menuClicked);
+  }
   React.useEffect(() => {
     const loadingTime = setTimeout(() => {
       setIsLoading(false);
       setVideoData(props.data);
-    }, 4000);
+    }, 2000);
     return () => clearTimeout(loadingTime);
   });
 
@@ -64,7 +68,7 @@ function Main(props) {
 
   return (
     <div className="page1">
-      <Header />
+      <Header toggleMenu={toggleMenu} />
       <div
         className={location.pathname === "/" ? "Home-page" : "Home-page-no-nav"}
       >
@@ -84,6 +88,7 @@ function Main(props) {
                 key={videoId}
                 videoData={videoData}
                 className="PlayerPage"
+                menuClicked={menuClicked}
               />
             }
           />
