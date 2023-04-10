@@ -43,7 +43,7 @@
 .Player-channel {
   display: flex;
   flex-direction: row;
-  margin-top: 0.5em;
+  margin-top: 2em;
 }
 .Player-channel-title {
   margin-left: 3%;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./PlayVideo.css";
-import YoutubeData from "../../Data";
+// import YoutubeData from "../../Data";
+// import musicData from "../../Music";
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import {
@@ -13,7 +14,7 @@ function PlayVideo(props) {
   const [specificData, setSpecificData] = React.useState({});
 
   React.useEffect(() => {
-    const newData = YoutubeData.filter(
+    const newData = props.currentData.filter(
       (item) => item.id.videoId === props.videoId
     );
 
@@ -22,11 +23,11 @@ function PlayVideo(props) {
     } else {
       setSpecificData(newData);
     }
-  }, [props.videoId]);
+  }, [props.videoId, props.currentData]);
 
   return (
     <div className="PlayVideo-container">
-      <div className={props.menuClicked ? "Navbar-active" : "Navbar"}>
+      <div className={props.menuClicked === true ? "Navbar" : "Navbar-active "}>
         <div className="Navbar-container">
           <Link to="/" style={{ textDecoration: "none" }}>
             <div className="Navbar-item">
