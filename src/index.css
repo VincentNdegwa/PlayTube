@@ -32,3 +32,9 @@ body {
   margin-top: 5%;
   width: 100%;
 }
+@media screen and (max-width: 750px) {
+  .Home-page {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

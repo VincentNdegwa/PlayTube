@@ -1,53 +1,56 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 200px;
+  /* display: flex;
+  flex-direction: column; */
+  width: 310px;
+  height: 300px;
   /* border: 1px solid #ccc; */
   border-radius: 8px;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.1);
   margin-top: 1em;
+  display: grid;
+  grid-template-rows: 65% auto;
 }
-
 .card-image {
-  height: 50%;
+  position: relative;
+  border-radius: 1em;
 }
-.card-image > img {
+.video-image {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 1em;
 }
 
 .card-details {
-  /* padding: 3px; */
+  margin-top: 0.5em;
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: auto 85%;
   justify-content: space-between;
-  height: auto;
+  height: 100%;
   width: 100%;
   column-gap: 10px;
+  position: relative;
 }
 
 .card-logo {
-  height: 100%;
-  width: 100%;
   border-radius: 50%;
   margin-left: 0px;
 }
 .card-logo > img {
-  height: 2em;
-  width: 2em;
   border-radius: 50%;
+  width: 3.3em;
+  height: 3.3em;
 }
 
 .card-description {
   display: flex;
   flex-direction: column;
-  height: 60px;
   margin-left: 0px;
 }
 .card-tittle {
-  width: 120px - 15px;
-  font-size: 12px;
+  /* width: 120px - 15px; */
+  font-size: 1.3em;
   margin-top: 0px;
   height: 50%;
   font-weight: bold;
@@ -60,7 +63,7 @@
 .card-channel {
   width: auto;
   /* height: 5px; */
-  font-size: 10px;
+  font-size: 1em;
   margin-top: 3%;
   color: #aaaaaa;
 }

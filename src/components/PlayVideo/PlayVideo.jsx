@@ -4,10 +4,8 @@ import "./PlayVideo.css";
 // import musicData from "../../Music";
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
-import {
-  MdOutlineSubscriptions,
-  MdOutlinePlayCircleOutline,
-} from "react-icons/md";
+import { BiMoviePlay } from "react-icons/bi";
+import { FiMusic } from "react-icons/fi";
 
 function PlayVideo(props) {
   // const [videoId, setVideoId] = React.useState(props.videoId);
@@ -30,29 +28,28 @@ function PlayVideo(props) {
       <div className={props.menuClicked === true ? "Navbar" : "Navbar-active "}>
         <div className="Navbar-container">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <div className="Navbar-item">
+            <div className="Navbar-item" onClick={props.Home}>
               <div className="Navbar-icon">
                 <AiFillHome />
               </div>
               <div className="Navbar-text">Home</div>
             </div>
           </Link>
-
           <Link to="/" style={{ textDecoration: "none" }}>
-            <div className="Navbar-item">
+            <div className="Navbar-item" onClick={props.Music}>
               <div className="Navbar-icon">
-                <MdOutlinePlayCircleOutline />
+                <FiMusic />
               </div>
-              <div className="Navbar-text">Shorts</div>
+              <div className="Navbar-text">Music</div>
             </div>
           </Link>
 
           <Link to="/" style={{ textDecoration: "none" }}>
-            <div className="Navbar-item">
+            <div className="Navbar-item" onClick={props.Movie}>
               <div className="Navbar-icon">
-                <MdOutlineSubscriptions />
+                <BiMoviePlay />
               </div>
-              <div className="Navbar-text">Subscription</div>
+              <div className="Navbar-text">Movies</div>
             </div>
           </Link>
         </div>

@@ -31,19 +31,21 @@ function Header(props) {
             <BiSearch className="Header-search-icon" />
           </div>
           <div className="Header-center-mic">
-            <BiMicrophone />
+            <div>
+              <BiMicrophone />
+            </div>
           </div>
         </div>
       </div>
 
       <div className="Header-right">
-        <div>
+        <div className="right-icon">
           <BiVideoPlus />
         </div>
-        <div>
+        <div className="right-icon">
           <MdNotificationsNone />
         </div>
-        <div>
+        <div className="right-icon-end">
           <CgProfile />
         </div>
       </div>

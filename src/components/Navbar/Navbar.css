@@ -1,7 +1,7 @@
 .Navbar {
-  margin-top: 30px;
-  width: 8.7em;
-  z-index: auto;
+  margin-top: 4em;
+  width: 10%;
+  z-index: 100;
   position: fixed;
   background-color: #0f0f0f;
   transition: margin-left ease 1s;
@@ -9,21 +9,20 @@
 }
 
 .Navbar-active {
-  margin-top: 30px;
-  width: 10em;
-  z-index: auto;
+  margin-top: 4em;
+  width: 10%;
+  z-index: 100;
   position: fixed;
   background-color: #0f0f0f;
-  margin-left: -10em;
-  display: block;
   transition: margin-left ease 1s;
+  margin-left: -12%;
 }
 
 .Navbar-container {
   display: grid;
   width: 100%;
   grid-template-rows: repeat(auto, 1fr);
-  column-gap: 1em;
+  row-gap: 0.5em;
 }
 
 .Navbar-item {
@@ -39,13 +38,14 @@
   text-decoration: none;
   color: #ffffff;
   width: 100%;
+  text-indent: 1em;
 }
 .Navbar-item:hover {
   background: #272727;
 }
 .Navbar-text {
-  font-size: 1em;
-  font-weight: 100;
+  font-size: 1.5em;
+  font-weight: 500;
   text-decoration: none;
   color: #ffffff;
 }
@@ -55,4 +55,26 @@
 .Navbar-icon {
   text-decoration: none;
   color: #ffffff;
+  font-size: 1.4em;
+}
+@media screen and (max-width: 750px) {
+  .Navbar {
+    width: 12em;
+    background-color: #0f0f0f;
+    margin-top: 4em;
+    width: 12em;
+    z-index: 100;
+    position: fixed;
+    transition: margin-left ease 1s;
+    margin-left: -12em;
+  }
+  .Navbar-slide {
+    margin-top: 4em;
+    width: 12em;
+    z-index: 100;
+    position: fixed;
+    transition: margin-left ease 1s;
+    margin-left: 0;
+    background-color: #0f0f0f;
+  }
 }

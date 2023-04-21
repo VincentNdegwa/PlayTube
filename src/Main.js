@@ -42,6 +42,7 @@ function Main(props) {
 
   function toggleMenu() {
     setMenuClicked(!menuClicked);
+    console.log("clicked menu");
   }
 
   React.useEffect(() => {
@@ -129,7 +130,12 @@ function Main(props) {
       >
         {location.pathname === "/" && (
           <div className="Navbar-home">
-            <Navbar Home={Home} Music={Music} Movie={Movie} />
+            <Navbar
+              Home={Home}
+              Music={Music}
+              Movie={Movie}
+              menuClicked={menuClicked}
+            />
           </div>
         )}
 

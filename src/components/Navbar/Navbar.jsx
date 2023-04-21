@@ -8,8 +8,25 @@ import { FiMusic } from "react-icons/fi";
 // import { IoPlayOutline } from "react-icons/io";
 
 function Navbar(props) {
+  const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
-    <div className="Navbar">
+    <div
+      className={
+        props.menuClicked && screenWidth <= 750 ? "Navbar-slide" : "Navbar"
+      }
+    >
       <div className="Navbar-container">
         <Link to="/" style={{ textDecoration: "none" }}>
           <div className="Navbar-item" onClick={props.Home}>
